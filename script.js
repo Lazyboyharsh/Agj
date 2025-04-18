@@ -34,4 +34,18 @@ document.addEventListener('DOMContentLoaded', () => {
   observer.observe(statsSection);
 });
 
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    576: { slidesPerView: 3 },
+    768: { slidesPerView: 4 },
+    992: { slidesPerView: 5 },
+  },
+});
 
